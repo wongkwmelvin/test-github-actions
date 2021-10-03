@@ -9,8 +9,9 @@ jobs:
       - uses: actions/checkout@master
       - id: step1
         run: |
-          #output=$(python test.py v2.21)
-          #echo "${{ steps.step1.outputs.status }} asdfasdfadsf"
+          output=$(python test.py v2.21)
+          echo "::set-output name=changelog::$output"
+          echo "${{ steps.step1.outputs.status }} asdfasdfadsf"
       
       - name: Set selected color
         run: |
