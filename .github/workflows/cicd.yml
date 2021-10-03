@@ -7,8 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          output=$(python test.py)
-          echo "::set-output name=test_output:$output"
+          ls
+          #output=$(python test.py)
+          #echo "::set-output name=test_output:$output"
         id: step1
 
-      - run: echo "${{steps.step1.outputs.test_output}}"
+     # - run: echo "${{steps.step1.outputs.test_output}}"
