@@ -7,10 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - run: |
+      - id: step1
+        run: |
           output=$(python test.py)
           echo "::set-output name=status:$output"
-        id: step1
-
-      - run: |
           echo "${{ steps.step1.outputs.status }} asdfasdfadsf"
+
+     # - run: |
+      #    echo "${{ steps.step1.outputs.status }} asdfasdfadsf"
