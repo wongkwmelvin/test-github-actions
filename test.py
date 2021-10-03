@@ -1,3 +1,3 @@
 import sys
 
-return "rubbish"
+print("argument {}".format(sys.argv[1]))
