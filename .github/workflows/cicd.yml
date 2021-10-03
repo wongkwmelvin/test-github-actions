@@ -11,7 +11,7 @@ jobs:
         run: |
           output=$(python test.py v2.21)
           echo "::set-output name=changelog::$output"
-          echo "$output"
+          echo $output
       
       - name: Set selected color
         run: |
