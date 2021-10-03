@@ -13,4 +13,4 @@ jobs:
         id: step1
 
       - run: |
-          echo ${{ steps.check.outputs.status }}
+          echo ${{ steps.step1.outputs.status }}
