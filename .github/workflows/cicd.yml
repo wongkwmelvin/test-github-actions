@@ -16,7 +16,7 @@ jobs:
       - name: Set selected color
         run: |
           output=$(python test.py v2.21)
-          echo '::set-output name=SELECTED_COLOR::$output'
+          echo '::set-output name=SELECTED_COLOR::green'
         id: random-color-generator
       
       - name: Get color
