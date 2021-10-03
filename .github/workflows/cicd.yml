@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@master
       - id: step1
         run: |
-          output=$(python test.py)
+          output=$(python test.py v2.21)
           echo "::set-output name=status:$output"
           echo "${{ steps.step1.outputs.status }} asdfasdfadsf"
 
