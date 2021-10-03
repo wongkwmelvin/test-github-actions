@@ -9,8 +9,8 @@ jobs:
       - uses: actions/checkout@master
       - run: |
           output=$(python test.py)
-          echo "::set-output name=test_output:$output"
+          echo "::set-output name=status:$output"
         id: step1
 
       - run: |
-          echo ${{ steps.check.outputs.test_output }}
+          echo ${{ steps.check.outputs.status }}
