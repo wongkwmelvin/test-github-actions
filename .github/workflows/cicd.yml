@@ -7,8 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - id: step1
-        run: |
+      - run: |
           output=$(python test.py v2.21)
           compare='argument v2.21'
           if [ "$output" = "$compare" ]; then
@@ -17,8 +16,8 @@ jobs:
           else
             echo "Strings are not equal."
           fi
+        id: step1
           
-          echo ${{ steps.step1.outputs.changelog }}
       
       
       - name: Set selected color
@@ -31,7 +30,9 @@ jobs:
         run: echo "The selected color is ${{ steps.random-color-generator.outputs.SELECTED_COLOR }}"
         
       - name: Get changelog
-        run: echo "The selected color is ${{ steps.step1.outputs.changelog }}"
+        run: |
+          echo "The selected color is ${{ steps.step1.outputs.changelog }}"
+          echo ${{ steps.step1.outputs.changelog }}
 
      # - run: |
       #    echo "${{ steps.step1.outputs.status }} asdfasdfadsf"
