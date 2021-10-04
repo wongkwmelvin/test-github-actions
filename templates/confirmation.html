@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <section id="rental-confirmation">
+            <div class="confirmation-container">    
+                <h1>Bike Rental Confirmation</h1>
+                <h3>We have confirmed your bike rental. Below the details:</h3>
+
+                <table>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>    
+                        <td>Name: </td>
+                        <td>{{name}}</td>
+                    </tr>
+
+                    <tr>    
+                        <td>Contact Number: </td>
+                        <td>{{phone}}</td>
+                    </tr>
+
+                    <tr>    
+                        <td>Location: </td>
+                        <td>{{location}}</td>
+                    </tr>
+
+                    <tr>    
+                        <td>Number of bikes: </td>
+                        <td>{{quantity}}</td>
+                    </tr>
+
+                    <tr>    
+                        <td>Total cost: </td>
+                        <td>${{price}} (Current bike demand: {{demand}})</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <hr>
+
+    </body>
+
+    <footer> 
+        <p>
+            &copy; 2021 BY BIKE RENTAL PTE LTD
+        </p>
+    </footer>
+</html>
