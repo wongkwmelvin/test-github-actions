@@ -14,11 +14,14 @@ jobs:
             echo '::set-output name=changelog::success'
           
           else
-            echo "Strings are not equal."
+            echo '::set-output name=changelog::failed'
           fi
         id: step1
           
-      
+      - if: steps.check.outputs.status != 'success'
+        run: |
+          echo ${{ steps.check.outputs.status }}
+          exit 1
       
       - name: Set selected color
         run: |
