@@ -11,7 +11,8 @@ jobs:
         run: |
           output=$(python test.py v2.21)
           compare='argument v2.21'
-          if [ "${output}" = "${compare}" ]; then
+          compared='argument v2.21'
+          if [ "$compared" = "$compare" ]; then
             echo "Strings are equal."
           
           echo $compare
