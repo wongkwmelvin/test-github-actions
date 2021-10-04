@@ -1,6 +1,6 @@
 # DevOps Show & Tell Project
 ## Example Scenario
-### Problem Statement
+### Problem Statement:
 A bike rental company wants to develop an application that allows customers to rent bikes remotely. The application requirements:
 - user interface to get customer's personal info, location, the number of bikes
 - display a rental confirmation and the price of the rental
