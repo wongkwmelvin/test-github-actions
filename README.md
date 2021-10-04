@@ -41,7 +41,7 @@ Other considerations:
   <img src="https://github.com/wongkwmelvin/test-github-actions/blob/main/workflow.png">
 </p>
 <p align="justify">
-  <em>Figure 2: The bike rental confirmation page. </em>
+  <em>Figure 3: Workflow of the CI/CD pipeline. </em>
 </p>
 
 ## Project Takeaways
