@@ -12,7 +12,7 @@ jobs:
           output=$(python test.py v2.21)
           compare='argument v2.21'
           compared='argument v2.21'
-          if [ "$compared" = "$compare" ]; then
+          if [ "$output" = "$compare" ]; then
             echo "Strings are equal."
           
           else
