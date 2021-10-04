@@ -20,6 +20,7 @@ Other considerations:
 - model.pkl (machine learning model)
 - data.csv (data for testing ML model)
 
+## The Web Application:
 <p align="center">
   <img src="https://github.com/wongkwmelvin/test-github-actions/blob/main/home%20page.png">
 </p>
@@ -36,7 +37,12 @@ Other considerations:
 
 
 ## Proposed CI/CD Workflow
-
+<p align="center">
+  <img src="https://github.com/wongkwmelvin/test-github-actions/blob/main/workflow.png">
+</p>
+<p align="justify">
+  <em>Figure 2: The bike rental confirmation page. </em>
+</p>
 
 ## Project Takeaways
 - 
