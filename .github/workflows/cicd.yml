@@ -15,6 +15,10 @@ jobs:
           if [ "$compared" = "$compare" ]; then
             echo "Strings are equal."
           
+          else
+            echo "Strings are not equal."
+          fi
+          
           echo $compare
           
           echo '::set-output name=changelog::$output'
