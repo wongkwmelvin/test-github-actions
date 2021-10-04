@@ -13,7 +13,8 @@ Other considerations:
   - other functionalities...
 
 ### Files in this Repo:
-- cicd.yml (CI/CD workflow)
+- deploy.yml (deployment workflow)
+- ml_test.yml (test ML model)
 - index.html (main user interface page)
 - confirmation.html (bike rental confirmation page)
 - app.py (backend code)
@@ -22,7 +23,7 @@ Other considerations:
 
 ## The Web Application:
 <p align="center">
-  <img src="https://github.com/wongkwmelvin/test-github-actions/blob/main/home%20page.png">
+  <img src="https://github.com/wongkwmelvin/test-github-actions/blob/main/home.png">
 </p>
 <p align="justify">
   <em>Figure 1: The user interface for bike rentals. </em>
