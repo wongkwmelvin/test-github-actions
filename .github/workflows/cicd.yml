@@ -31,5 +31,7 @@ jobs:
         run: git status
       - name: stage changed files
         run: git add .
+      - run: git config --global user.email "wongkwmelvin@gmail.com"
+      - run: git config --global user.name "wongkwmelvin"
       - name: commit changed files
         run: git commit -m "ml_metric.txt"
