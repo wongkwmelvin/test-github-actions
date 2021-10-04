@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@master
       - run: |
           output=$(python test.py v2.21)
-          compare='argument v2.21'
+          compare='argument v2.22'
           if [ "$output" = "$compare" ]; then
             echo '::set-output name=changelog::success'
           
@@ -20,7 +20,7 @@ jobs:
           
       - if: steps.step1.outputs.changelog != 'success'
         run: |
-          echo ${{ steps.check.outputs.status }}
+          echo ${{ steps.step1.outputs.changelog }}
           exit 1
       
       - name: Set selected color
