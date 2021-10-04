@@ -10,9 +10,9 @@ jobs:
       - id: step1
         run: |
           output=$(python test.py v2.21)
-          echo '::set-output name=changelog::$(output)'
+          echo '::set-output name=changelog::$output'
           echo ${{ steps.step1.outputs.changelog }}
-      
+          echo $output
       
       
       - name: Set selected color
