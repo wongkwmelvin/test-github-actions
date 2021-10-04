@@ -23,6 +23,9 @@ jobs:
       
       - name: Get color
         run: echo "The selected color is ${{ steps.random-color-generator.outputs.SELECTED_COLOR }}"
+        
+      - name: Get changelog
+        run: echo "The selected color is ${{ steps.step1.outputs.changelog }}"
 
      # - run: |
       #    echo "${{ steps.step1.outputs.status }} asdfasdfadsf"
