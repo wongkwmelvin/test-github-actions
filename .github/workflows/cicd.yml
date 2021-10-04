@@ -11,19 +11,14 @@ jobs:
         run: |
           output=$(python test.py v2.21)
           compare='argument v2.21'
-          compared='argument v2.21'
           if [ "$output" = "$compare" ]; then
-            echo "Strings are equal."
+            echo '::set-output name=changelog::success'
           
           else
             echo "Strings are not equal."
           fi
           
-          echo $compare
-          
-          echo '::set-output name=changelog::$output'
           echo ${{ steps.step1.outputs.changelog }}
-          echo $output
       
       
       - name: Set selected color
